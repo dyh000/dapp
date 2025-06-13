@@ -2,18 +2,67 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Video Playback Page</title>
+  <title>DAPP Site</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      color: #333;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .section {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+  </style>
 </head>
-<body style="text-align: center; font-family: sans-serif; background-color: #f9f9f9; padding: 2em;">
+<body>
 
-  <h1>Demo Video</h1>
+  <h1>Welcome to the website of DAPP2 Group 11 - Music Therapy</h1>
+  <p>Here you can find more information regarding our rehabilitation-focused device. Use the table of contents below or just scroll down to explore!</p>
 
-  <video width="720" height="auto" controls>
-    <source src="demo.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+  <!-- Table of Contents -->
+  <h2>Table of Contents</h2>
+  <ul>
+    <li><a href="#circuit">More about the circuit</a></li>
+    <li><a href="#arduino">More about the microprocessor (Arduino)</a></li>
+    <li><a href="#video">Game demonstration video 🎵</a></li>
+  </ul>
 
-  <p>If the video doesn't play, please try using Chrome or Safari.</p>
+  <!-- Sections -->
+  <div id="circuit" class="section">
+    <h3>More about the circuit</h3>
+    <p>This is the schematic of the circuit: you can see connections and precise values used.</p>
+    <img src="circuit schematic.png" alt="Circuit schematic" width="100%">
+  </div>
+
+  <div id="arduino" class="section">
+    <h3>More about the microprocessor (Arduino)</h3>
+    <p>For the prototype, Arduino NANO 33 Ble Rev2 was used. You can see here its map; you might find it useful to better understand the connections.</p>
+    <img src="pinout for Nano 33 BLE Rev2..png" alt="Arduino layout" width="100%">
+  </div>
+
+  <div id="video" class="section">
+    <h3>Game demonstration video 🎵</h3>
+    <p>This is the most engaging aspect of our device. Click play to observe what the user would be looking at while performing rehabilitation.</p>
+    <video width="100%" controls>
+      <source src="demo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
 
 </body>
 </html>
